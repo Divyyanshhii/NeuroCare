@@ -49,3 +49,18 @@ AI/ML:	TensorFlow, HuggingFace, Dialogflow, IBM Watson, OpenAI
 Security:	JWT Authentication, AES Encryption, HTTPS
 DevOps:	Docker, Jenkins, Git & GitHub
 Testing:	JUnit, Selenium, Postman, JMeter
+
+
+💡 How It Works
+User registers and logs into the system securely.
+The AI chatbot interacts with the user and analyzes emotional tone.
+Users can log moods and write journal entries.
+The AI predicts emotional patterns using past data.
+The analytics dashboard visualizes trends and provides recommendations.
+
+
+🔐 Security
+Authentication: JSON Web Tokens (JWT)
+Encryption: AES 256-bit encryption for sensitive user data
+Secure Communication: HTTPS and SSL/TLS
+Role Management: Admin, Therapist, User access levels
