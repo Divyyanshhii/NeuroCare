@@ -1,7 +1,6 @@
 import type React from "react"
 import type { Metadata } from "next"
-import { GeistSans } from "geist/font/sans"
-import { GeistMono } from "geist/font/mono"
+// Removed Geist font imports to avoid build issues when the font package is unavailable
 import { Analytics } from "@vercel/analytics/next"
 import { Suspense } from "react"
 import { FloatingChatbot } from "@/components/floating-chatbot"
@@ -34,7 +33,7 @@ export default function RootLayout({
         <meta name="apple-mobile-web-app-status-bar-style" content="default" />
         <meta name="format-detection" content="telephone=no" />
       </head>
-      <body className={`font-sans ${GeistSans.variable} ${GeistMono.variable} antialiased`}>
+      <body className={`font-sans antialiased`}>
         <Suspense
           fallback={
             <div className="min-h-screen flex items-center justify-center">

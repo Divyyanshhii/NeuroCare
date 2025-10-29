@@ -23,6 +23,13 @@ public class ChatController {
     public Mono<String> chat(@RequestBody Map<String, String> payload) {
         String userMessage = payload.get("message");
 
+        // Fallback if no API key is configured
+        if (openaiApiKey == null || openaiApiKey.isBlank()) {
+            String fallback = "I’m here for you. Even without AI, I can offer support. " +
+                    "Try a deep breath: inhale 4s, hold 4s, exhale 4s. Want to share more about how you feel?";
+            return Mono.just(fallback);
+        }
+
         return webClient.post()
                 .header("Authorization", "Bearer " + openaiApiKey)
                 .contentType(MediaType.APPLICATION_JSON)
