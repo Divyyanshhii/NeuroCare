@@ -1,9 +1,9 @@
 "use client"
 
-import { useState, useEffect } from "react"
-import { Button } from "@/components/ui/button"
-import { ChevronLeft, ChevronRight, Play } from "lucide-react"
-import Link from "next/link"
+import { useState, useEffect } from "react";
+import { Button } from "@/components/ui/button";
+import { ChevronLeft, ChevronRight, Play } from "lucide-react";
+import Link from "next/link";
 
 const heroSlides = [
   {
